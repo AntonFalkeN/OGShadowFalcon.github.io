@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareMotorcycles</title>
+    <link rel="stylesheet" href="css/compareStyle.css">
+</head>
+<body onload="listArray()">
+    <header>
+        <div class="headerGrid">
+            <div onclick="Home()" class="grid-item1">Antons MC</div>
+            <div class="grid-item2">Burger</div>
+    </header>
+<main>
+    <div id="searchAlternatives">
+
+    </div>
+<div id="makeAndModel">
+
+</div>
+
+    <div class="mainDiv">
+        <div id="left">
+                <div class="leftBike">
+                    <div id="image"></div>
+    
+                    <div id="infoList">
+                        <div class="gridItem1">Engine</div>
+                        <div class="gridItem2">Fuel Consumption</div>
+                        <div class="gridItem3">Power</div>
+                     </div>
+                </div>
+        </div>
+    
+         <div id="right">
+            <div class="search-bar2">
+                <form>
+                    <input id="search2" type="search" list="search-suggestions" placeholder="Add bike..." />
+                </form>
+                <button id="submitSecond">Search</button>
+                <datalist id="search-suggestions">
+                    <option value="API">
+                    <option value="Matching">
+                    <option value="Search">
+                    <option value="Here">
+                  </datalist>
+            </div>
+                <div class="rightBike">
+                    <div id="imageSecond"></div>
+    
+                    <div id="infoListSecond">
+                        <div class="gridItemSecond1">Engine</div>
+                        <div class="gridItemSecond2">Fuel Consumption</div>
+                        <div class="gridItemSecond3">Power</div>
+                     </div>
+                </div>
+        </div>   
+    </div> 
+
+    <div id="searchAlternativesSecond">
+
+    </div>
+    <script src="js/comparescript.js" defer></script>
+</main>
+</body>
+</html>

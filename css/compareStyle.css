@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(230, 221, 221);
+    color: #c00a0a;
+}
+
+header{
+    height: 50px;
+    background-color: #cc2a49;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+}
+.grid-item1{
+    margin: 10px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.grid-item2{
+    margin: 10px;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
+
+#searchAlternatives{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 50%;
+    border-radius: 8px;
+}
+
+#makeAndModel{
+    display: flex;
+    height: 50px;
+    background-color: #cc2a49;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 1%;
+}
+
+#compareOneBike{
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    gap: 20px;
+    row-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "a a . b b"
+    "a a . b b"
+    ". . . b b"
+    "c c . b b";
+
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.search-bar2{
+    grid-area: c;
+}
+#image{
+    grid-area: a;
+}
+
+#infoList{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-left: 100px;
+    grid-area: b;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+    "a a . f f"
+    "b b . g g"
+    "c c . h h"
+    "d d . i i"
+    "e e . j j";
+}
+.gridItem1{
+    background-color: bisque;
+    grid-area: a;
+}
+.gridItem2{
+    grid-area: b;
+}
+.gridItem3{
+    grid-area: c;
+}
+.gridItem4{
+    grid-area: f;
+}
+.gridItem5{
+    grid-area: g;
+}
+.gridItem6{
+    grid-area: h;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+#infoListSecond{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-left: 100px;
+    grid-area: b;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+    "a a . f f"
+    "b b . g g"
+    "c c . h h"
+    "d d . i i"
+    "e e . j j";
+}
+
+.gridItemSecond1{
+    background-color: bisque;
+    grid-area: a;
+}
+.gridItemSecond2{
+    grid-area: b;
+}
+.gridItemSecond3{
+    grid-area: c;
+}
+.gridItemSecond4{
+    grid-area: f;
+}
+.gridItemSecond5{
+    grid-area: g;
+}
+.gridItemSecond6{
+    grid-area: h;
+}
+
+.mainDiv{
+    visibility: hidden;
+}
+.search-bar2{
+    visibility: visible;
+}
+
+@media (max-width: 910px){
+    .mainDiv{
+        flex-direction: column;
+    }
+}
